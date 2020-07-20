@@ -17,5 +17,5 @@ Le but est de réaliser le jeu du pendu sur mobile avec les fonctionnalités sui
      - ......
      
      
-JE FEFLECHI ENCORE AU FONCTIONNEMENT, DONC SI VOUS AVEZ DES IDEES MERCI DE LES PARTAGER.
+JE REFLECHI ENCORE AU FONCTIONNEMENT, DONC SI VOUS AVEZ DES IDEES MERCI DE LES PARTAGER.
       
