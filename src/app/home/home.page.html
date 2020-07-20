@@ -1,20 +1,71 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Pendu Master
     </ion-title>
+           <ion-button slot="end" (click)="newGame()">Nouvelle partie</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <div id="page" class="" [style.backgroundImage]="'url('+ cur_img +')'" 
+    [style.background-size]="'100% 100%, 100% 100%'" [style.background-repeat]="'no-repeat, repeat'">
+
+      
+    </div>
+
 </ion-content>
+<ion-footer>
+  <div class="out">Il vous reste <b id="nbre_essai">{{coupsRestant}}</b> tentative(s)</div>        
+      <table id="mot">
+        <tr>
+           <td *ngFor="let l of tableauMot; index as i"> <span [id]="i">{{tableauMot[i]}}</span></td>
+        </tr>
+      </table>
+  <p id="desc">Entrez une lettre gràce au clavier ci-dessous ; <br /> Si elle est dans le mot secret, elle sera affichée mais sinon... la sentence se rapprochera !</p>
+        
+  <table id="clavier">
+    <tr>
+     <td id="A" (click)="lettreChoisie('A');" >A</td>
+     <td id="B" (click)="lettreChoisie('B');" >B</td>
+     <td id="C" (click)="lettreChoisie('C');" >C</td>
+     <td id="D" (click)="lettreChoisie('D');" >D</td>
+     <td id="E" (click)="lettreChoisie('E');" >E</td>
+     <td id="F" (click)="lettreChoisie('F');" >F</td>
+     <td id="G" (click)="lettreChoisie('G');" >G</td>
+    </tr>
+    <tr>
+     <td id="H" (click)="lettreChoisie('H');" >H</td>
+     <td id="I" (click)="lettreChoisie('I');" >I</td>
+     <td id="J" (click)="lettreChoisie('J');" >J</td>
+     <td id="K" (click)="lettreChoisie('K');" >K</td>
+     <td id="L" (click)="lettreChoisie('L');" >L</td>
+     <td id="M" (click)="lettreChoisie('M');" >M</td>
+     <td id="N" (click)="lettreChoisie('N');" >N</td>
+    </tr>
+    <tr>
+     <td id="O" (click)="lettreChoisie('O');" >O</td>
+     <td id="P" (click)="lettreChoisie('P');" >P</td>
+     <td id="Q" (click)="lettreChoisie('Q');" >Q</td>
+     <td id="R" (click)="lettreChoisie('R');" >R</td>
+     <td id="S" (click)="lettreChoisie('S');" >S</td>
+     <td id="T" (click)="lettreChoisie('T');" >T</td>
+     <td id="U" (click)="lettreChoisie('U');" >U</td>
+    </tr>  
+    <tr>
+     <td id="V" (click)="lettreChoisie('V');" >V</td>
+     <td id="W" (click)="lettreChoisie('W');" >W</td>
+     <td id="X" (click)="lettreChoisie('X');" >X</td>
+     <td id="Y" (click)="lettreChoisie('Y');" >Y</td>
+     <td id="Z" (click)="lettreChoisie('Z');" >Z</td>
+    
+     <td colspan="2">
+      <ion-button color="secondary" (click)="help()" expand="full" size="small">Aide</ion-button>
+
+     </td>       
+           
+       
+    </tr>
+   </table>
+</ion-footer>

@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "name": "Easy Repair ?",
+            "children": [
+                {
+                    "name": "Qu'est ce que Easy Repair ?",
+                    "information": "Easy Repair (Réparation facile) est un service de maintenance (réparation de votre téléphone mobile) rapide. Ce service vous permet de réparer rapidement et simplement votre mobile sans effort et à moindre coût."
+                }
+            ]
+        },
+        {
+            "name": "Comment ça marche ?",
+            "children": [
+                {
+                    "name": "Nous reparons votre téléphone mobile",
+                    "information": "Une panne d'écran, de battérie, de réseau, de circuit de charge ?... Easy Repair repare votre smartphone quelque* soit la panne."
+                },
+                {
+                    "name": "Pas besoin de vous déplacer*",
+                    "information": "Vous n'avez pas besoin de vous déplacer. Passez simplement votre commande pour une réparation. Notre technicien se déplace chez vous (à la maison ou au bureau) pour éffectuer votre réparation rapide."
+                },
+                {
+                    "name": "Délais de réparation",
+                    "information": "Nos délais de réparation dépendent de la réparation et varis de 5 min à 3 jours maximum."
+                }
+            ]
+        },
+        {
+            "name": "Combien ça coûte ?",
+            "children": [
+                {
+                    "name": "Petit prix",
+                    "information": "Nous vous offrons un service de qualité à des prix étudiés."
+                }
+            ]
+        }
+    ]
+}

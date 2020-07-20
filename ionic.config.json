@@ -1,5 +1,7 @@
 {
   "name": "Pendu Master",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
